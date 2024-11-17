@@ -6,7 +6,11 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'verdana-pro': ['"Verdana Pro Bold"', 'sans-serif'],
+      },
+    },
   },
   plugins: ['flowbite/plugin'],
 }

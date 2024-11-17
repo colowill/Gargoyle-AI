@@ -7,6 +7,7 @@ const scrapeInfo = async() => {
     const page = await browser.newPage();
     await page.goto(url);
 
+    // Scrapes music info from WXYC archiv
     const musicData = await page.evaluate(() => {
         const rows = Array.from(document.querySelectorAll('table:nth-of-type(2) tr[bgcolor="#F3F3F3"]'));
         return rows.map(row => {
